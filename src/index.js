@@ -2,9 +2,13 @@ function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   let cityElement = document.querySelector("#city");
+  let descriptionElement = document.querySelector("#description");
+
+  console.log(response.data.condition.description);
 
   cityElement.innerHTML = response.data.city;
-
+  descriptionElement.innerHTML = response.data.condition.description;
+  // 450  next step is to work on the humidity
   temperatureElement.innerHTML = Math.round(temperature);
 }
 
