@@ -70,8 +70,10 @@ main {
 }
 
 .weather-app-icon {
-  font-size: 44px;
-  margin: 22px;
+  width: 90px;
+  height: 101px;
+  margin-right: 14px;
+  margin-bottom: 24px;
 }
 
 .weather-app-temperature {
