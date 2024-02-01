@@ -87,22 +87,20 @@ main {
   font-size: 28px;
 }
 
-.weather-forecast {
-  margin-top: 20px;
+.weather-forecast-day {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
 }
 
-.weather-forecast-date {
-  font-size: 16px;
-  color: #6d464b;
-  opacity: 0.5;
-}
-.weather-forecast-temperatures {
-  font-size: 13px;
+.weather-forecast-day > * {
+  margin-bottom: 10px;
 }
 
-.weather-forecast-temperature-min {
-  opacity: 0.5;
+.weather-forecast-day div.weather-forecast-icon {
+  font-size: 30px;
 }
 
 footer {
